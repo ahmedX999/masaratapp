@@ -1,16 +1,45 @@
-# masaratapp
 
-A new Flutter project.
+# Post Viewer App
 
-## Getting Started
+A Flutter application for viewing and managing posts and comments from a JSONPlaceholder API.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Display a list of posts with titles and bodies
+- Paginate through the list of posts
+- Search functionality to filter posts by title
+- View post details including the title, body, word count, and comments
+- Delete posts with a confirmation dialog
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Installation
+
+1. Ensure you have Flutter installed. For installation instructions, visit the [Flutter website](https://flutter.dev/docs/get-started/install).
+2. Clone this repository to your local machine.
+3. Run `flutter pub get` to install dependencies.
+
+## Running with Docker Compose
+
+Alternatively, you can use Docker Compose to build and run the app:
+
+```bash
+docker-compose up --build
+```
+
+## Dependencies
+
+- [http](https://pub.dev/packages/http): For making HTTP requests to the JSONPlaceholder API.
+
+## Deployment
+
+The app is deployed and accessible at [https://masaratapp.web.app/](https://masaratapp.web.app/).
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues for any bugs or feature requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
