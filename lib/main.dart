@@ -9,13 +9,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Post Viewer',
+      title: 'Live Video Player',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PostListScreen(),
+      home: LiveVideoPlayer(),
+    );
+  }
+}
+
+class LiveVideoPlayer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebView(
+      initialUrl: 'https://ok.ru/live/7800224095758',
+      javascriptMode: JavascriptMode.unrestricted,
     );
   }
 }
